@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div, p, input, button, form {
+	box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url(../fonts/RobotoSlab-Regular.ttf);    
+} 
+
+@font-face {
+    font-family: "Roboto Slab Bold";
+    src: url(../fonts/RobotoSlab-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Slab Light";
+    src: url(../fonts/RobotoSlab-Light.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Slab Thin";
+    src: url(../fonts/RobotoSlab-Thin.ttf);
+}
+
+@font-face {
+    font-family: "Museo Sans Cyrl";
+    src: url(../fonts/Museo_Sans_Cyrl_100.ttf)
+}
+
+body {
+    font-family: "Roboto Slab";
+    font-size: 15px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 37px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_logo {
+    display: flex;
+    background: url(../img/logo.png) no-repeat;
+    height: 72px;
+    padding-left: 90px;
+   text-transform: uppercase;
+    
+}
+
+.header_margin {
+    margin: auto 0;
+}
+
+.header_logo_home {
+   
+}
+
+.header_logo_home_housing {
+    font-size: 16px;
+
+}
+
+.header_logo_home_area {
+    font-size: 13px;
+    font-family: "Roboto Slab Light";
+}
+
+.header_menu {
+   
+}
+
+nav li {
+    font-style: 14px;
+    font-family: "Roboto Slab Bold";
+    margin-right: 15px;
+    display: inline;
+}
+
+nav li:nth-child(5) {
+    margin-right: 0;
+}
+
+.header_menu_price {
+    background: #f7f2fe;
+    padding: 10px 12px 13px;
+    border-radius: 3px;
+}
+.header_contact {
+    color: #2f1059; 
+    text-align: right;
+}
+
+.header_contact_number {
+    font-family: "Roboto Slab Bold";
+    font-size: 21px; 
+    margin-bottom: 5px;    
+}
+
+
+#first {
+    background: url(../img/background_first.jpg) no-repeat top center;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.first_heading_wraper{
+    padding-top: 30px;
+}
+
+.first_headig {
+    background: url(../img/bacground_cloud.png) no-repeat;
+    color: #2f1059;
+    text-align: center;
+    height: 191px;
+    padding-top: 35px;
+}
+
+.first_headig_delivery {
+    font-size: 22px;
+}
+
+h1 {
+    font-size: 44px;
+    text-transform: uppercase;
+}
+
+.first_headig_apartments {
+    font-size: 20px;
+}
+
+.first_form_wraper {
+    margin-top: 116px;
+}
+
+.first_form {
+    background: url(../img/backgroand_form.png) no-repeat center;
+    text-align: center;
+    color: #e6dcf2;
+    height: 378px;
+}
+
+.first_form input {
+    width: 200px;
+    height: 50px;
+    padding-left: 50px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    margin-right: 8px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.first_form_input_icon {
+    display: inline;
+    position: relative;
+}
+
+.first_form_input_icon i {
+    color: #7e7985;
+    position: absolute;
+    left: 30px;
+    top: 3px;
+}
+
+.first_form_heading {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 100px;
+}
+
+.first_form_record {
+    font-size: 17px;
+    padding-bottom: 25px;
+}
+
+.first_form button {
+    background: #d22828;
+    height: 50px;
+    width: 270px;
+    border: 1px solid #d22828;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.first_form_time {
+    color: #893fee;
+    padding-bottom: 15px;
+}
+
+.first_form_time_span {
+    font-size: 17px;
+    font-weight: bold;
+    border: 2px solid #893fee;
+    padding: 2px 7px;
+    border-radius: 2px;
+}
+
+
+
+#finish {
+    background: url(../img/background_finish.png) no-repeat top center;
+}
+
+.finish_header {
+    text-align: center;
+    color: #ede5f8;
+    margin-bottom: 105px;
+}
+
+.finish_header_heading {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-top: 35px;
+}
+
+.finish_header_february {
+    font-size: 20px;
+}
+
+.finish_heading_super {
+    padding-top: 15px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.location_heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.location_heading h2 {
+    font-family: "Roboto Slab Bold";
+    margin-bottom: 15px;
+}
+
+.location_heading p {
+    font-family: "Roboto Slab Light";
+    font-size: 20px;
+}
+
+.location_img_wraper {
+    display: flex;
+}
+
+.location_img {
+    text-align: center;
+    margin-bottom: 85px;
+}
+
+.location_img h3 {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.location_img p {
+    font-family: "Roboto Slab Light";
+}
+
+#infrastructure {
+    padding-top: 75px;
+    background: url(../img/bacground_infrastructure.png) no-repeat top center;
+}
+
+.infrastructure_heeading h2 {
+    text-align: center;
+   
+    margin-bottom: 65px;
+}
+
+.infrastructure_object_wraper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infrastructure_object {
+    margin-bottom: 50px;
+}
