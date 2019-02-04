@@ -47,11 +47,7 @@ h2 {
     text-transform: uppercase;
     font-family: "Roboto Slab Bold";
     font-size: 37px;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
 }
 
 .header_logo {
@@ -260,11 +256,28 @@ h1 {
 
 .location_img_wraper {
     display: flex;
+    justify-content: space-around;
 }
 
 .location_img {
     text-align: center;
     margin-bottom: 85px;
+    position: relative;
+}
+
+.location_img:nth-child(1) {
+    z-index: 1;
+    left: 30px;
+}
+
+.location_img:nth-child(2) {
+    z-index: 3;
+    top: 30px;
+}
+
+.location_img:nth-child(3) {
+    z-index: 2;
+    right: 30px;
 }
 
 .location_img h3 {
@@ -284,13 +297,7 @@ h1 {
 }
 
 .infrastructure_heeading h2 {
-    text-align: center;
     margin-bottom: 65px;
-}
-
-.infrastructure_object_wraper {
-    display: flex;
-    justify-content: space-between;
 }
 
 .infrastructure_object {
@@ -307,9 +314,10 @@ h1 {
 .heading_pseudo::after {
     content: "";
     display: block;
-    background: url(../img/infrastructure_shadow.png);
+    background: url(../img/infrastructure_shadow.png) no-repeat;
     height: 37px;
     margin-top: 15px;
+    margin-left: -30px
 }
 
 .infrastructure_object:nth-child(1) {
@@ -349,12 +357,16 @@ h1 {
     background: url(../img/advantage_bg.png) no-repeat top center;
     margin-top: 68px;
     color: #fff;
+    margin-bottom: 85px;
+    padding-bottom: 30px;
+   
 }
 
 .advantages_wraper {
     display: flex;
     justify-content: space-between;
     padding-top: 25px;
+
 }
 
 .advantages_advantage {
@@ -374,3 +386,98 @@ h1 {
 
 }
 
+.construction_heading {
+    margin-bottom: 50px;
+}
+
+.construction_design_wraper, 
+.picking_complete_wraper, 
+.infrastructure_object_wraper,
+.documentation_license,
+.header,
+.footer_wraper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.construction_design {
+    width: 325px;
+}
+
+.construction_design h3 {
+    font-size: 22px;
+    font-family: "Roboto Slab Bold";
+    text-align: center;
+    margin-bottom: 17px;  
+}
+
+.construction_design p {
+    margin-top: 25px;
+    margin-bottom: 70px;
+}
+
+#picking {
+    background: url(../img/picking_bg.png) no-repeat top center;
+    color: #fff;
+    padding-top: 75px;
+    padding-bottom: 21px;
+}
+
+.picking_heading {
+    margin-bottom: 55px;
+}
+
+#picking h4 {
+    font-size: 19px;
+    margin-bottom: 35px;
+}
+
+
+.line_green {
+    background: #278729;
+}
+
+.picking_complete i {
+    margin-right: 7px;
+}
+
+#documentation {
+    background: url(../img/documentation_bg.png) no-repeat top center;
+}
+
+.documentation_heading {
+    text-align: center;
+    padding-top: 85px;
+    margin-bottom: 45px;
+}
+
+.documentation_heading p {
+    font-family: "Roboto Slab Light";
+    margin-top: 25px;
+    font-size: 21px;
+}
+
+.documentation_license {
+    padding-bottom: 15px;
+}
+
+footer {
+    background: #080808 no-repeat top center;
+    padding-top: 20px;
+    color: #fff;
+    padding-bottom: 25px;
+}
+
+
+.footer_rights a, 
+.footer_contact  {
+    color: #fff;
+}
+
+.footer_rights {
+    margin: auto 0;
+}
+
+.footer_address i {
+    margin-right: 5px;
+}
