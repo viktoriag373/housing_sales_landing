@@ -112,7 +112,7 @@ nav li:nth-child(5) {
 #first {
     background: url(../img/background_first.jpg) no-repeat top center;
     margin-top: 15px;
-    margin-bottom: 40px;
+
 }
 
 .first_heading_wraper{
@@ -124,7 +124,7 @@ nav li:nth-child(5) {
     color: #2f1059;
     text-align: center;
     height: 191px;
-    padding-top: 35px;
+    padding-top: 45px;
 }
 
 .first_headig_delivery {
@@ -209,7 +209,48 @@ h1 {
     border-radius: 2px;
 }
 
+#second_advantages {
+    padding-bottom: 35px;
+}
 
+.second_advantages_wraper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.second_advantage {
+    background: url(../img/bacground_sss.png) no-repeat;
+    width: 153px;
+    height: 146px;
+    display: flex;
+  
+}
+
+.wraper_p {
+    margin: auto;
+}
+
+.second_advantage p {
+    font-size: 17px;
+    text-align: center;
+  
+}
+
+.second_advantage_span {
+    font-weight: bold;
+}
+
+.second_advantage_span_font {
+    font-size: 15px;
+}
+
+.margin_50 {
+    margin-top: 50px;
+}
+
+.margin_130 {
+    margin-top: 130px;
+}
 
 #finish {
     background: url(../img/background_finish.png) no-repeat top center;
