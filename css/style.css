@@ -43,6 +43,11 @@ body {
     margin: 0 auto;
 }
 
+header {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
 h2 {
     text-transform: uppercase;
     font-family: "Roboto Slab Bold";
@@ -102,6 +107,10 @@ nav li:nth-child(5) {
     text-align: right;
 }
 
+.header_contact img {
+    border: 0;
+}
+
 .header_contact_number {
     font-family: "Roboto Slab Bold";
     font-size: 21px; 
@@ -111,8 +120,6 @@ nav li:nth-child(5) {
 
 #first {
     background: url(../img/background_first.jpg) no-repeat top center;
-    margin-top: 15px;
-
 }
 
 .first_heading_wraper{
