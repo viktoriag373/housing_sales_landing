@@ -68,10 +68,6 @@ h2 {
     margin: auto 0;
 }
 
-.header_logo_home {
-   
-}
-
 .header_logo_home_housing {
     font-size: 16px;
 
@@ -82,26 +78,29 @@ h2 {
     font-family: "Roboto Slab Light";
 }
 
-.header_menu {
-   
+.header_menu ul {
+   display: flex;
 }
 
-nav li {
-    font-style: 14px;
+.menu li  {
+    list-style: none;
+
+}
+
+.menu li a {
+    text-decoration: none;
+    border: none;
+    font-size: 14px;
     font-family: "Roboto Slab Bold";
-    margin-right: 15px;
-    display: inline;
+    color: #080808; 
+    padding: 10px 15px;  
 }
 
-nav li:nth-child(5) {
-    margin-right: 0;
-}
-
-.header_menu_price {
+.menu li a:hover {
     background: #f7f2fe;
-    padding: 10px 12px 13px;
     border-radius: 3px;
 }
+
 .header_contact {
     color: #2f1059; 
     text-align: right;
@@ -126,15 +125,16 @@ nav li:nth-child(5) {
     padding-top: 30px;
 }
 
-.first_headig {
+.first_heading {
     background: url(../img/bacground_cloud.png) no-repeat;
+    background-position-x: 70px;
     color: #2f1059;
     text-align: center;
     height: 191px;
     padding-top: 45px;
 }
 
-.first_headig_delivery {
+.first_heading_delivery {
     font-size: 22px;
 }
 
@@ -143,7 +143,7 @@ h1 {
     text-transform: uppercase;
 }
 
-.first_headig_apartments {
+.first_heading_apartments {
     font-size: 20px;
 }
 
@@ -206,6 +206,7 @@ h1 {
 .first_form_time {
     color: #893fee;
     padding-bottom: 15px;
+    padding-top: 10px;
 }
 
 .first_form_time_span {
@@ -235,20 +236,13 @@ h1 {
 
 .wraper_p {
     margin: auto;
+    width: 110px;
 }
 
 .second_advantage p {
-    font-size: 17px;
+    font-size: 15px;
     text-align: center;
   
-}
-
-.second_advantage_span {
-    font-weight: bold;
-}
-
-.second_advantage_span_font {
-    font-size: 15px;
 }
 
 .margin_50 {
@@ -278,6 +272,10 @@ h1 {
 
 .finish_header_february {
     font-size: 20px;
+}
+
+.finish_header_february_icon {
+    margin-right: 10px;
 }
 
 .finish_heading_super {
@@ -449,11 +447,12 @@ h1 {
 }
 
 .construction_design {
-    width: 325px;
+    width: 301px;
+    text-align: center;
 }
 
 .construction_design h3 {
-    font-size: 22px;
+    font-size: 20px;
     font-family: "Roboto Slab Bold";
     text-align: center;
     margin-bottom: 17px;  
@@ -462,6 +461,7 @@ h1 {
 .construction_design p {
     margin-top: 25px;
     margin-bottom: 70px;
+    text-align: left;
 }
 
 #picking {
