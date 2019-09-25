@@ -1,12 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
-div, p, input, button, form {
+/* div, p, input, button, form {
 	box-sizing: border-box;
-}
+} */
 
 @font-face {
     font-family: "Roboto Slab";
@@ -36,6 +37,10 @@ div, p, input, button, form {
 body {
     font-family: "Roboto Slab";
     font-size: 15px;
+}
+
+.disable_scroll {
+    overflow-y: hidden;
 }
 
 .container {
@@ -158,7 +163,7 @@ h1 {
     height: 378px;
 }
 
-.first_form input {
+.input {
     width: 200px;
     height: 50px;
     padding-left: 50px;
@@ -192,7 +197,7 @@ h1 {
     padding-bottom: 25px;
 }
 
-.first_form button {
+.button {
     background: #d22828;
     height: 50px;
     width: 270px;
@@ -201,6 +206,7 @@ h1 {
     color: #fff;
     font-size: 17px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .first_form_time {
@@ -528,4 +534,72 @@ footer {
 
 .footer_address i {
     margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.modal_dialog_call_me {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    /* display: flex; */
+    z-index: 1000;
+    display: none;
+}
+
+.modal_dialog_call_me_visible {
+    display: flex;
+    opacity: 1;
+}
+
+.modal_dialog_call_me_inner {
+    position: relative;
+    margin: auto;
+    background: #eee8f5;
+    width: 90%;
+    max-width: 450px;
+    min-height: 300px;
+    padding: 40px;
+    padding-bottom: 60px;
+}
+
+.modal_dialog_call_me_header {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+
+.modal_dialog_call_me_close_button {
+    position: absolute;
+    width: 20px;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.modal_dialog_call_me_body {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.modal_dialog_call_me_input {
+    width: 270px;
+    border: 1px solid #cecece;
+    margin-right: 0;
 }

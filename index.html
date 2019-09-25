@@ -5,6 +5,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -53,14 +54,14 @@
                     <p class="first_form_record">Покажем Вам квартиры в удобное для Вас время</p>  
                     <form action="#">
                         <div class="first_form_input_icon">
-                            <input type="text" name="name" required placeholder="Имя">
+                            <input class="input" type="text" name="name" required placeholder="Имя">
                             <i class="fa fa-user  fa-fw" aria-hidden="true"></i>
                         </div> 
                         <div class="first_form_input_icon">
-                            <input type="tel" name="number" required placeholder="Телефон">
+                            <input class="input" type="tel" name="number" required placeholder="Телефон">
                             <i class="fa fa-phone  fa-fw" aria-hidden="true"></i>
                         </div>
-                    <button type="submit">Записаться на просмотр!</button>
+                    <button class="button" type="submit">Записаться на просмотр!</button>
                     </form>
                     <p class="first_form_time">Осталось всего <span class="first_form_time_span">5</span> квартир!</p>  
                 </div>   
@@ -333,5 +334,36 @@
             </div>    
         </div>
     </footer>
+
+
+<!-- ----------------------Модальное окно "Позвонить мне"------------------------ -->
+
+    <div class="modal_dialog_call_me">
+        <div class="modal_dialog_call_me_inner">
+            <div class="modal_dialog_call_me_header">
+                <div class="modal_dialog_call_me_header_title">
+                    Оставьте свой номер и мы свяжемся с вами
+                </div>
+                <button class="modal_dialog_call_me_close_button">&times;</button>
+            </div>
+            <div class="modal_dialog_call_me_body">
+                <form action="#">
+                    <div class="first_form_input_icon">
+                        <input class="input modal_dialog_call_me_input" type="text" name="name" required placeholder="Имя">
+                        <i class="fa fa-user  fa-fw" aria-hidden="true"></i>
+                    </div> 
+                    <div class="first_form_input_icon">
+                        <input class="input modal_dialog_call_me_input" type="tel" name="number" required placeholder="Телефон">
+                        <i class="fa fa-phone  fa-fw" aria-hidden="true"></i>
+                    </div>
+                <button class="button" type="submit">Позвонить мне</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!-- --------------------------------------------------------------------------- -->
+
+
 </body>
 </html>
