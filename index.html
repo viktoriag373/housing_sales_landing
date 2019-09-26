@@ -21,11 +21,11 @@
                 <div class="header_menu header_margin">
                     <nav class="menu">
                         <ul>
-                            <li><a href="">Инфраструктура</a></li>
-                            <li><a>Планировки и цены</a></li>
-                            <li><a href="">Материалы и отделка</a></li>
-                            <li><a href="">Документы</a></li>
-                            <li><a href="">Контакты</a></li>
+                            <li><a href="#location">Инфраструктура</a></li>
+                            <li><a href="">Планировки и цены</a></li>
+                            <li><a href="#picking">Материалы и отделка</a></li>
+                            <li><a href="#documentation">Документы</a></li>
+                            <li><a href="#footer">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -45,24 +45,24 @@
                         Срок сдачи: <strong>Февраль 2016</strong></p>
                     <h1>Ваша квартира в новострое ждет вас</h1>
                     <p class="first_heading_apartments">Уютные квартиры в центре города
-                        и в <strong> минутах от р. Волга</strong></p>
+                        и в <strong>5 минутах от р. Волга</strong></p>
                 </div>
             </div>
             <div class="first_form_wraper">
                 <div class="first_form">
                     <h3 class="first_form_heading">Запишитесь на просмотр прямо сейчас!</h3>
                     <p class="first_form_record">Покажем Вам квартиры в удобное для Вас время</p>  
-                    <form action="#">
+                    <!-- <form > -->
                         <div class="first_form_input_icon">
-                            <input class="input" type="text" name="name" required placeholder="Имя">
+                            <input class="input first_form_input_name" data-rule="text" type="text" name="name" required placeholder="Имя">
                             <i class="fa fa-user  fa-fw" aria-hidden="true"></i>
                         </div> 
                         <div class="first_form_input_icon">
-                            <input class="input" type="tel" name="number" required placeholder="Телефон">
+                            <input class="input first_form_input_number" data-rule="number" type="tel" name="number" required placeholder="Телефон">
                             <i class="fa fa-phone  fa-fw" aria-hidden="true"></i>
                         </div>
-                    <button class="button" type="submit">Записаться на просмотр!</button>
-                    </form>
+                        <button class="button first_form_button" type="submit">Записаться на просмотр!</button>
+                    <!-- </form> -->
                     <p class="first_form_time">Осталось всего <span class="first_form_time_span">5</span> квартир!</p>  
                 </div>   
             </div>
@@ -306,7 +306,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer id="footer">
         <div class="container">
             <div class="footer_wraper">
                 <div class="header_logo footer_logo">
@@ -362,8 +362,30 @@
         </div>
     </div>
 
-<!-- --------------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------------- -->
 
+
+<!-- ----------------------Модальное окно "Оставить заявку"------------------------ -->
+
+
+    <div class="modal_dialog_sign_up_for_viewing">
+        <div class="modal_dialog_sign_up_for_viewing_inner">
+            <div class="modal_dialog_sign_up_for_viewing_header">
+                <div class="modal_dialog_sign_up_for_viewing_header_title">
+                    Ваша заявка принята!
+                </div>
+                <button class="modal_dialog_sign_up_for_viewing_close_button">&times;</button>
+            </div>
+            <div class="modal_dialog_sign_up_for_viewing_body">
+                <p>Мы вам перезвоним в ближайшее время</p>
+                <button class="button modal_dialog_sign_up_for_viewing_body_button" type="submit">Спасибо!</button>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- ---------------------------------------------------------------------------- -->
 
 </body>
 </html>

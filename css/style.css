@@ -172,6 +172,7 @@ h1 {
     margin-right: 8px;
     border: 1px solid white;
     border-radius: 3px;
+    outline: none;
 }
 
 .first_form_input_icon {
@@ -207,6 +208,7 @@ h1 {
     font-size: 17px;
     font-weight: bold;
     cursor: pointer;
+    outline: none;
 }
 
 .first_form_time {
@@ -538,15 +540,10 @@ footer {
 
 
 
+/*----------------------Модальное окно "Позвонить мне"------------------------*/
 
-
-
-
-
-
-
-
-.modal_dialog_call_me {
+.modal_dialog_call_me,
+.modal_dialog_sign_up_for_viewing {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -560,12 +557,14 @@ footer {
     display: none;
 }
 
-.modal_dialog_call_me_visible {
+.modal_dialog_call_me_visible,
+.modal_dialog_sign_up_for_viewing_visible {
     display: flex;
     opacity: 1;
 }
 
-.modal_dialog_call_me_inner {
+.modal_dialog_call_me_inner,
+.modal_dialog_sign_up_for_viewing_inner {
     position: relative;
     margin: auto;
     background: #eee8f5;
@@ -576,13 +575,15 @@ footer {
     padding-bottom: 60px;
 }
 
-.modal_dialog_call_me_header {
+.modal_dialog_call_me_header,
+.modal_dialog_sign_up_for_viewing_header {
     font-weight: 700;
     font-size: 24px;
     text-align: center;
 }
 
-.modal_dialog_call_me_close_button {
+.modal_dialog_call_me_close_button,
+.modal_dialog_sign_up_for_viewing_close_button {
     position: absolute;
     width: 20px;
     top: 5px;
@@ -593,7 +594,8 @@ footer {
     font-weight: bold;
 }
 
-.modal_dialog_call_me_body {
+.modal_dialog_call_me_body,
+.modal_dialog_sign_up_for_viewing_body {
     margin-top: 30px;
     text-align: center;
 }
@@ -602,4 +604,18 @@ footer {
     width: 270px;
     border: 1px solid #cecece;
     margin-right: 0;
+}
+
+
+
+/*------------------------------------------------------------------------------*/
+
+
+.modal_dialog_sign_up_for_viewing_header_title {
+    margin-bottom: 70px;
+}
+
+
+.modal_dialog_sign_up_for_viewing_body_button {
+    margin-top: 90px;
 }
