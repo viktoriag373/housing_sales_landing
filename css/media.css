@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Roboto Slab";
+    src: url(../fonts/RobotoSlab-Regular.ttf);
+    font-weight: normal;    
+} 
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url(../fonts/RobotoSlab-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url(../fonts/RobotoSlab-Light.ttf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url(../fonts/RobotoSlab-Thin.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Museo Sans";
+    src: url(../fonts/Museo_Sans_Cyrl_100.ttf);
+    font-weight: 100;
+}
