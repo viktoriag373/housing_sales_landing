@@ -2,6 +2,7 @@
 window.onload = function() {
     initCallMeDialog();
     initSingUpForViewingDialog();   
+    addScrollForMenuAnchors();
 }
 
 
@@ -71,3 +72,37 @@ function initSingUpForViewingDialog() {
     }
 }
 
+
+function addScrollForMenuAnchors() {
+    const ANIMATION_TIME = 1000;
+    const FRAMES_COUNT = 50;
+    // собираем все якоря
+    const anchors = document.querySelectorAll('.menu a[href^="#"]');
+    console.dir(anchors)
+    anchors.forEach(function(item) {
+        // каждому якорю присваиваем обработчик события
+        item.addEventListener('click', function(e) {
+            // убираем стандартное поведение
+            e.preventDefault();
+            // для каждого якоря берем соответствующий ему элемент и определяем его координату Y
+            let itemCoordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset;
+            scrollTo(itemCoordY, ANIMATION_TIME, FRAMES_COUNT);
+        });
+    })
+
+    function scrollTo(coordY, animationTime, framesCount) {
+        let scrollStep = coordY / framesCount;
+        let scroller = setInterval(function() {
+            if (scrollStep < Math.abs(window.pageYOffset - coordY)
+                && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
+                // скроллим на к-во пикселей, которое соответствует одному такту
+                window.scrollBy(0, scrollStep);
+            } else {
+                // иначе добираемся до элемента и выходим из интервала
+                window.scrollTo(0, coordY);
+                clearInterval(scroller);
+            }
+            // время интервала равняется частному от времени анимации и к-ва кадров
+        }, animationTime / framesCount);
+    }
+}

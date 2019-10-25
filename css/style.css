@@ -31,6 +31,12 @@ h2 {
     text-align: center;
 }
 
+#infrastructure,
+#picking,
+#location {
+    padding-top: 75px;
+}
+
 .header_logo {
     display: flex;
     background: url(../img/logo.png) no-repeat;
@@ -235,12 +241,12 @@ h1 {
 
 #finish {
     background: url(../img/background_finish.png) no-repeat top center;
+    padding-bottom: 40px;
 }
 
 .finish_header {
     text-align: center;
     color: #ede5f8;
-    margin-bottom: 105px;
 }
 
 .finish_header_heading {
@@ -262,7 +268,6 @@ h1 {
     padding-top: 15px;
     display: block;
     margin: 0 auto;
-    margin-bottom: 50px;
 }
 
 .location_heading {
@@ -317,9 +322,7 @@ h1 {
 }
 
 #infrastructure {
-    padding-top: 75px;
     background: url(../img/bacground_infrastructure.png) no-repeat top center;
-
 }
 
 .infrastructure_heeading h2 {
@@ -434,7 +437,6 @@ h1 {
 #picking {
     background: url(../img/picking_bg.png) no-repeat top center;
     color: #fff;
-    padding-top: 75px;
     padding-bottom: 21px;
 }
 
@@ -585,3 +587,14 @@ footer {
 }
 
 /*------------------------------------------------------------------------------*/
+
+
+.topbutton img {
+    width:70px;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+}
