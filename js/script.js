@@ -5,9 +5,8 @@ window.onload = function() {
     addScrollForMenuAnchors();
 }
 
-
 function initCallMeDialog() {
-    let buttonsCall = document.querySelectorAll('.button_call');
+    let buttonsCall = document.querySelectorAll('.company_button_call');
     let modalDialogCallMe = document.querySelector('.modal_dialog_call_me');
     let modalDialogCallMeCloseButton = document.querySelector('.modal_dialog_call_me_close_button');
 
@@ -25,7 +24,6 @@ function initCallMeDialog() {
     function closeModalCallMe() {
         modalDialogCallMe.classList.remove('modal_dialog_call_me_visible');
         // window.document.body.classList.remove('disable_scroll');
-
     }
 }
 
@@ -71,7 +69,6 @@ function initSingUpForViewingDialog() {
 
     }
 }
-
 
 function addScrollForMenuAnchors() {
     const ANIMATION_TIME = 1000;

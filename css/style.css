@@ -31,31 +31,43 @@ h2 {
     text-align: center;
 }
 
+.construction_advantages_wrapper, 
+.equipment_wrapper, 
+.infrastructure_wrapper,
+.documentation_documents,
+.infrastructure_advantages_wrapper,
+.header,
+.footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
 #infrastructure,
-#picking,
+#equipment,
 #location {
     padding-top: 75px;
 }
 
-.header_logo {
+.company_logo {
     display: flex;
     background: url(../img/logo.png) no-repeat;
     height: 72px;
     padding-left: 90px;
-   text-transform: uppercase;
-    
+    text-transform: uppercase;
 }
 
-.header_margin {
+.company_logo_description,
+.header_menu,
+.company_contact {
     margin: auto 0;
 }
 
-.header_logo_home_housing {
+.company_logo_description_title {
     font-size: 16px;
 
 }
 
-.header_logo_home_area {
+.company_logo_description_region {
     font-size: 13px;
     font-weight: lighter;
 }
@@ -66,7 +78,6 @@ h2 {
 
 .menu li  {
     list-style: none;
-
 }
 
 .menu li a {
@@ -83,27 +94,37 @@ h2 {
     border-radius: 3px;
 }
 
-.header_contact {
+.company_contact {
     color: #2f1059; 
     text-align: right;
 }
 
-.header_contact img {
+.company_contact img {
     border: 0;
 }
 
-.header_contact_number {
+.company_contact_number {
     font-weight: bold;
     font-size: 21px; 
-    margin-bottom: 5px;    
+    margin-bottom: 15px;   
 }
 
+.company_button_call {
+    font-size: 15px;
+    color: #2f1059; 
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #2f1059; 
+    border-radius: 4px;
+    text-decoration: none; 
+}
+
+.company_button_call i {
+    margin-right: 5px;
+}
 
 #first {
     background: url(../img/background_first.jpg) no-repeat top center;
-}
-
-.first_heading_wraper{
     padding-top: 30px;
 }
 
@@ -114,6 +135,7 @@ h2 {
     text-align: center;
     height: 191px;
     padding-top: 45px;
+    margin-bottom: 115px;
 }
 
 .first_heading_delivery {
@@ -127,10 +149,6 @@ h1 {
 
 .first_heading_apartments {
     font-size: 20px;
-}
-
-.first_form_wraper {
-    margin-top: 116px;
 }
 
 .first_form {
@@ -202,137 +220,132 @@ h1 {
     border-radius: 2px;
 }
 
-#second_advantages {
+#advantages {
     padding-bottom: 35px;
 }
 
-.second_advantages_wraper {
+.advantages_wrapper,
+.location_advantages_wrapper {
     display: flex;
     justify-content: space-around;
 }
 
-.second_advantage {
+.advantages_item {
     background: url(../img/bacground_sss.png) no-repeat;
     width: 153px;
     height: 146px;
     display: flex;
-  
 }
 
-.wraper_p {
+.advantages_item div {
     margin: auto;
     width: 110px;
-    font-weight: 600;
 }
 
-.second_advantage p {
+.advantages_item p {
     font-size: 15px;
+    font-weight: 600;
     text-align: center;
     margin-left: 5px;
 }
 
-.margin_50 {
-    margin-top: 50px;
-}
-
-.margin_130 {
+.advantages_item_1_margin,
+.advantages_item_6_margin {
     margin-top: 130px;
 }
 
-#finish {
-    background: url(../img/background_finish.png) no-repeat top center;
-    padding-bottom: 40px;
+.advantages_item_2_margin,
+.advantages_item_5_margin {
+    margin-top: 50px;
 }
 
-.finish_header {
+#deadline {
+    background: url(../img/background_finish.png) no-repeat top center;
+    padding-bottom: 40px;
     text-align: center;
     color: #ede5f8;
 }
 
-.finish_header_heading {
+.deadline_title {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
     padding-top: 35px;
 }
 
-.finish_header_february {
+.deadline_date {
     font-size: 20px;
 }
 
-.finish_header_february_icon {
+.deadline_date_icon {
     margin-right: 10px;
 }
 
-.finish_heading_super {
+.deadline_date_image {
     padding-top: 15px;
     display: block;
     margin: 0 auto;
 }
 
-.location_heading {
+.location_title {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.location_heading h2 {
+.location_title h2 {
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-.location_heading p {
+.location_title p {
     font-weight: lighter;
     font-size: 20px;
 }
 
-.location_img_wraper {
-    display: flex;
-    justify-content: space-around;
-}
-
-.location_img {
+.location_advantage {
     text-align: center;
     margin-bottom: 85px;
     position: relative;
 }
 
-.location_img:nth-child(1) {
+.location_advantage:nth-child(1) {
     z-index: 1;
     left: 30px;
 }
 
-.location_img:nth-child(2) {
+.location_advantage:nth-child(2) {
     z-index: 3;
     top: 30px;
 }
 
-.location_img:nth-child(3) {
+.location_advantage:nth-child(3) {
     z-index: 2;
     right: 30px;
 }
 
-.location_img h3 {
+.location_advantage h3 {
     font-size: 21px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.location_img p {
+.location_advantage p {
     font-weight: lighter;
+    width: 250px;
+    margin: 0 auto;
 }
 
 #infrastructure {
     background: url(../img/bacground_infrastructure.png) no-repeat top center;
 }
 
-.infrastructure_heeading h2 {
+.infrastructure_title {
     margin-bottom: 65px;
 }
 
 .infrastructure_object {
     width: 340px;
     margin-right: 30px;
-
 }
 
 .infrastructure_object h3 {
@@ -340,7 +353,7 @@ h1 {
     font-weight: bold;
 }
 
-.heading_pseudo::after {
+.infrastructure_object_title::after {
     content: "";
     display: block;
     background: url(../img/infrastructure_shadow.png) no-repeat;
@@ -371,7 +384,7 @@ h1 {
     margin-bottom: 12px;
 }
 
-.privilege {
+.infrastructure_advantages {
     background: url(../img/advantage_bg.png) no-repeat top center;
     margin-top: 30px;
     color: #fff;
@@ -380,81 +393,69 @@ h1 {
    
 }
 
-.privilege_wraper {
+.infrastructure_advantages_wrapper {
     padding-top: 25px;
-
 }
 
-.privilege_advantage {
+.infrastructure_advantages_advantage {
     width: 370px;
     display: flex; 
 }
 
-.privilege_advantage p {
+.infrastructure_advantages_advantage p {
     font-weight: lighter;
     font-size: 17px;
     margin-left: 15px;
     margin-top: 8px;
 }
 
-.privilege_advantage p span {
+.infrastructure_advantages_advantage p span {
     font-weight: bold;
+    display: block;
 }
 
-.construction_heading {
+.construction_title {
     margin-bottom: 50px;
 }
 
-.construction_design_wraper, 
-.picking_complete_wraper, 
-.infrastructure_object_wraper,
-.documentation_license,
-.privilege_wraper,
-.header,
-.footer_wraper {
-    display: flex;
-    justify-content: space-between;
-}
-
-.construction_design {
+.construction_advantage {
     width: 301px;
     text-align: center;
 }
 
-.construction_design h3 {
+.construction_advantage h3 {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 17px;  
 }
 
-.construction_design p {
+.construction_advantage p {
     margin-top: 25px;
     margin-bottom: 70px;
     text-align: left;
 }
 
-#picking {
+#equipment {
     background: url(../img/picking_bg.png) no-repeat top center;
     color: #fff;
     padding-bottom: 21px;
 }
 
-.picking_heading {
+.equipment_title {
     margin-bottom: 55px;
 }
 
-#picking h4 {
+#equipment h4 {
     font-size: 19px;
     margin-bottom: 35px;
 }
-
 
 .line_green {
     background: #278729;
 }
 
-.picking_complete i {
+.equipment_type i {
     margin-right: 7px;
 }
 
@@ -462,19 +463,19 @@ h1 {
     background: url(../img/documentation_bg.png) no-repeat top center;
 }
 
-.documentation_heading {
+.documentation_title {
     text-align: center;
     padding-top: 85px;
     margin-bottom: 45px;
 }
 
-.documentation_heading p {
+.documentation_title p {
     font-weight: lighter;
     margin-top: 25px;
     font-size: 21px;
 }
 
-.documentation_license {
+.documentation_documents {
     padding-bottom: 15px;
 }
 
@@ -484,7 +485,6 @@ footer {
     color: #fff;
     padding-bottom: 25px;
 }
-
 
 .footer_rights a, 
 .footer_contact  {
@@ -498,6 +498,15 @@ footer {
 .footer_address i {
     margin-right: 5px;
     
+}
+
+.footer_address_region {
+    width: 170px;
+}
+
+.footer_button_call {
+    color: #fff;
+    border: 1px solid #fff;
 }
 
 
@@ -569,13 +578,10 @@ footer {
     margin-right: 0;
 }
 
-
-
 /*------------------------------------------------------------------------------*/
 
 
 /*----------------------Модальное окно "Оставить заявку"------------------------*/
-
 
 .modal_dialog_sign_up_for_viewing_header_title {
     margin-bottom: 70px;
@@ -597,4 +603,5 @@ footer {
     bottom: 30px;
     right: 30px;
     cursor: pointer;
+    z-index: 10000;
 }

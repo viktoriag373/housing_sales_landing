@@ -8,147 +8,138 @@
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="js/script.js"></script>
 </head>
-<body te>
+<body>
     <header>
         <div class="container">
             <div class="header">
-                <div class="header_logo">
-                    <!--<img src="img/logo.png" alt="логотип">-->
-                    <div class="header_logo_home header_margin">
-                        <p class="header_logo_home_housing">Жилой дом</p>
-                        <p class="header_logo_home_area">Ярославская область</p>
+                <div class="company_logo">
+                    <div class="company_logo_description">
+                        <p class="company_logo_description_title">Жилой дом</p>
+                        <p class="company_logo_description_region">Ярославская область</p>
                     </div>
                 </div>
-                <div class="header_menu header_margin">
+                <div class="header_menu">
                     <nav class="menu">
                         <ul>
                             <li><a href="#location">Инфраструктура</a></li>
-                            <li><a href="#picking">Материалы и отделка</a></li>
+                            <li><a href="#construction">Материалы и отделка</a></li>
                             <li><a href="#documentation">Документы</a></li>
                             <li><a href="#footer">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="header_contact header_margin">
-                    <p class="header_contact_number">+7 (999) 999-99-99</p>
-                    <a href="#" class="button_call"><img src="img/button_call.png" alt="заказать звонок"></a>
-                    <!--<a href="#" class="button_call"><i class="fa fa-phone" aria-hidden="true"></i>Заказать звонок</a>-->
+                <div class="company_contact">
+                    <p class="company_contact_number">+7 (999) 999-99-99</p>
+                    <a href="#" class="company_button_call"><i class="fa fa-phone" aria-hidden="true"></i>Заказать звонок</a>
                 </div>
             </div>
         </div>
     </header>
     <section id="first">
         <div class="container">
-            <div class="first_heading_wraper">
-                <div class="first_heading">
-                    <p class="first_heading_delivery"><strong>Дом готов,</strong> идёт внутренняя отделка.
-                        Срок сдачи: <strong>Февраль 2019</strong></p>
-                    <h1>Ваша квартира в новострое ждет вас</h1>
-                    <p class="first_heading_apartments">Уютные квартиры в центре города
-                        и в <strong>5 минутах от р. Волга</strong></p>
+            <div class="first_heading">
+                <p class="first_heading_delivery"><strong>Дом готов,</strong> идёт внутренняя отделка.
+                    Срок сдачи: <strong>Февраль 2019</strong></p>
+                <h1>Ваша квартира в новострое ждет вас</h1>
+                <p class="first_heading_apartments">Уютные квартиры в центре города
+                    и в <strong>5 минутах от р. Волга</strong></p>
+            </div>
+            <div class="first_form">
+                <h3 class="first_form_heading">Запишитесь на просмотр прямо сейчас!</h3>
+                <p class="first_form_record">Покажем Вам квартиры в удобное для Вас время</p>  
+                <div class="first_form_input_icon">
+                    <input class="input first_form_input_name" data-rule="text" type="text" name="name" required placeholder="Имя">
+                    <i class="fa fa-user  fa-fw" aria-hidden="true"></i>
+                </div> 
+                <div class="first_form_input_icon">
+                    <input class="input first_form_input_number" data-rule="number" type="tel" name="number" required placeholder="Телефон">
+                    <i class="fa fa-phone  fa-fw" aria-hidden="true"></i>
                 </div>
-            </div>
-            <div class="first_form_wraper">
-                <div class="first_form">
-                    <h3 class="first_form_heading">Запишитесь на просмотр прямо сейчас!</h3>
-                    <p class="first_form_record">Покажем Вам квартиры в удобное для Вас время</p>  
-                    <!-- <form > -->
-                        <div class="first_form_input_icon">
-                            <input class="input first_form_input_name" data-rule="text" type="text" name="name" required placeholder="Имя">
-                            <i class="fa fa-user  fa-fw" aria-hidden="true"></i>
-                        </div> 
-                        <div class="first_form_input_icon">
-                            <input class="input first_form_input_number" data-rule="number" type="tel" name="number" required placeholder="Телефон">
-                            <i class="fa fa-phone  fa-fw" aria-hidden="true"></i>
-                        </div>
-                        <button class="button first_form_button" type="submit">Записаться на просмотр!</button>
-                    <!-- </form> -->
-                    <p class="first_form_time">Осталось всего <span class="first_form_time_span">5</span> квартир!</p>  
-                </div>   
-            </div>
+                <button class="button first_form_button" type="submit">Записаться на просмотр!</button>
+                <p class="first_form_time">Осталось всего <span class="first_form_time_span">5</span> квартир!</p>  
+            </div>   
         </div>
     </section>
-    <section id="second_advantages">
+    <section id="advantages">
         <div class="container">
-            <div class="second_advantages_wraper">
-                <div class="second_advantage margin_130">
-                    <div class="wraper_p">
+            <div class="advantages_wrapper">
+                <div class="advantages_item advantages_item_1_margin">
+                    <div>
                         <p>5 минут до центра</p>
                     </div>
                 </div>
-                <div class="second_advantage margin_50">
-                    <div class="wraper_p">
+                <div class="advantages_item advantages_item_2_margin">
+                    <div>
                         <p>300 метров до Волги</p>
                     </div>
                 </div>
-                <div class="second_advantage">
-                    <div class="wraper_p">
+                <div class="advantages_item advantages_item_3_margin">
+                    <div>
                         <p>Экологически чистое место</p>
                     </div>
                 </div>
-                <div class="second_advantage">
-                    <div class="wraper_p">
+                <div class="advantages_item advantages_item_4_margin">
+                    <div>
                         <p>Бесплатная кладовка</p>
                     </div>
                 </div>
-                <div class="second_advantage margin_50">
-                    <div class="wraper_p">
+                <div class="advantages_item advantages_item_5_margin">
+                    <div>
                         <p>Бесплатное парковочное место</p>
                     </div>
                 </div>
-                <div class="second_advantage margin_130">
-                    <div class="wraper_p">
-                         <p>Бюджетная отделка под ключ</p>
+                <div class="advantages_item advantages_item_6_margin">
+                    <div>
+                        <p>Бюджетная отделка под ключ</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="finish">
+    <section id="deadline">
         <div class="container">
-            <div class="finish_header">
-                <h3 class="finish_header_heading">Дом готов. Идёт внутренняя отделка</h3>
-                <p class="finish_header_february"><i class="fa fa-flag-checkered finish_header_february_icon" aria-hidden="true"></i>Срок сдачи: Февраль 2019</p>
-                <div class="finish_heading_super">
-                    <img src="img/super.png" alt="">
+            <div>
+                <h3 class="deadline_title">Дом готов. Идёт внутренняя отделка</h3>
+                <p class="deadline_date"><i class="fa fa-flag-checkered deadline_date_icon" aria-hidden="true"></i>Срок сдачи: Февраль 2019</p>
+                <div class="deadline_date_image">
+                    <img src="img/deadline_image.png" alt="">
                 </div>
-            </div>    
+            </div>
         </div>
     </section>
     <section id="location">
         <div class="container">
-            <div class="location_heading">
+            <div class="location_title">
                 <h2>Идeальное расположение дома</h2>
                 <p>Тихий и экологически чистый район</p>
             </div>
-            <div class="location_img_wraper">
-                <div class="location_img">
-                    <img src="img/river.png" alt="">
+            <div class="location_advantages_wrapper">
+                <div class="location_advantage">
+                    <img src="img/location_river.png" alt="">
                     <h3>Близость к реке</h3>
                     <p>До Волги 300 метров</p>
                 </div>
-                <div class="location_img">
-                    <img src="img/forest.png" alt="">
+                <div class="location_advantage">
+                    <img src="img/location_forest.png" alt="">
                     <h3>Зеленые зоны</h3>
                     <p>Березовая роща и сосновый бор</p>
                 </div>
-                <div class="location_img">
-                    <img src="img/neighbourhood.png" alt="">
+                <div class="location_advantage">
+                    <img src="img/location_neighbourhood.png" alt="">
                     <h3>Соседи и атмосфера</h3>
-                    <p> Коттеджи и деревенская<br> застройка вокруг</p>
+                    <p> Коттеджи и деревенская застройка вокруг</p>
                 </div>
             </div>
         </div>
     </section>
     <section id="infrastructure">
         <div class="container">
-            <div class="infrastructure_heeading">
+            <div class="infrastructure_title">
                 <h2>Развитая инфраструктура</h2>
             </div>
-            <div class="infrastructure_object_wraper">
+            <div class="infrastructure_wrapper">
                 <div class="infrastructure_object">
-                    <h3 class="heading_pseudo">Социальные объекты</h3>
-                    <div class="infrastructure_object_shadow"></div>
+                    <h3 class="infrastructure_object_title">Социальные объекты</h3>
                     <p>Волга - 350м,  центральный пляж - 900м</p>
                     <div class="line"></div>
                     <p>Авто парковка - 5м</p>
@@ -163,8 +154,7 @@
                     <div class="line"></div>
                 </div>
                 <div class="infrastructure_object">
-                    <h3 class="heading_pseudo">Образовательные объекты</h3>
-                    <div class="infrastructure_object_shadow"></div>
+                    <h3 class="infrastructure_object_title">Образовательные объекты</h3>
                     <p>Детский сад №173 - 300м</p>
                     <div class="line"></div>
                     <p>Школа №46 - 900м</p>
@@ -177,8 +167,7 @@
                     <div class="line"></div>
                 </div>
                 <div class="infrastructure_object">
-                    <h3 class="heading_pseudo">Транспортные остановки</h3>
-                    <div class="infrastructure_object_shadow"></div>
+                    <h3 class="infrastructure_object_title">Транспортные остановки</h3>
                     <p>Союзная - 300м</p>
                     <div class="line"></div>
                     <p>К-тр.Дружба - 600м</p>
@@ -186,51 +175,50 @@
                     <p>Школа 50 - 1100м</p>
                     <div class="line"></div>
                 </div>
-                <div style="clear: both;"></div>
             </div>  
         </div>
-        <div class="privilege">
+        <div class="infrastructure_advantages">
             <div class="container">
-                <div class="privilege_wraper">
-                <div class="privilege_advantage">
-                    <img src="./img/advantage_1_icon.png" alt="">
-                    <p>
-                        <span>До центра 5 минут на машине</span>
-                        или общ. транспорте
-                    </p>
-                </div>
-                <div class="privilege_advantage">
-                    <img src="./img/advantage_2_icon.png" alt="">
-                    <p>
-                        <span>3 школы и детский садик</span><br>
-                        в  шаговой доступности
-                    </p>
-                </div>
-                <div class="privilege_advantage">
-                    <img src="./img/advantage_3_icon.png" alt="">
-                    <p>
-                        <span>Вся необходимая инфрастуктура</span>
-                        продумана и обеспечена
-                    </p>
-                </div>
+                <div class="infrastructure_advantages_wrapper">
+                    <div class="infrastructure_advantages_advantage">
+                        <img src="./img/advantage_1_icon.png" alt="">
+                        <p>
+                            <span>До центра 5 минут на машине</span>
+                            или общ. транспорте
+                        </p>
+                    </div>
+                    <div class="infrastructure_advantages_advantage">
+                        <img src="./img/advantage_2_icon.png" alt="">
+                        <p>
+                            <span>3 школы и детский садик</span>
+                            в шаговой доступности
+                        </p>
+                    </div>
+                    <div class="infrastructure_advantages_advantage">
+                        <img src="./img/advantage_3_icon.png" alt="">
+                        <p>
+                            <span>Вся необходимая инфрастуктура</span>
+                            продумана и обеспечена
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="construction">
         <div class="container">
-            <div class="construction_heading">
+            <div class="construction_title">
                 <h2>Продуманная конструкция дома</h2>
             </div>
-            <div class="construction_design_wraper">
-                <div class="construction_design">
+            <div class="construction_advantages_wrapper">
+                <div class="construction_advantage">
                     <h3>Заголовок про стену</h3>
                     <img src="img/construction_wall.png" alt="">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
                         industry. Lorem Ipsum has been the industry's standard dummy 
                         text ever since the 1500s, when an unknown printer took </p>
                 </div>
-                <div class="construction_design">
+                <div class="construction_advantage">
                     <h3>Заголовок про кровлю</h3>
                     <img src="img/construction_roof.png" alt="">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
@@ -238,7 +226,7 @@
                         text ever since the 1500s, when an unknown printer took a 
                         galley of type and scrambled it to make  </p>
                 </div>
-                <div class="construction_design">
+                <div class="construction_advantage">
                     <h3>Заголовок про канализацию</h3>
                     <img src="img/construction_sewerage.png" alt="">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
@@ -248,14 +236,14 @@
             </div>
         </div>
     </section>
-    <section id="picking">
+    <section id="equipment">
         <div class="container">
-            <div class="picking_heading">
+            <div class="equipment_title">
                 <h2>Комплектация</h2>
             </div>
             <h4>В каждой квартире</h4>
-            <div class="picking_complete_wraper">
-                <div class="picking_complete">
+            <div class="equipment_wrapper">
+                <div class="equipment_type">
                     <p><i class="fa fa-check-circle" aria-hidden="true"></i>Газовый котёл - Название</p>
                     <div class="line line_green"></div>
                     <p><i class="fa fa-check-circle" aria-hidden="true"></i>Ванна - Металлическая</p>
@@ -267,7 +255,7 @@
                     <p><i class="fa fa-check-circle" aria-hidden="true"></i>Газовая плита - Четырех конфорочная</p>
                     <div class="line line_green"></div>
                 </div>
-                <div class="picking_complete">
+                <div class="equipment_type">
                     <p><i class="fa fa-check-circle" aria-hidden="true"></i>Балкон - Застекленный</p>
                     <div class="line line_green"></div>
                     <p><i class="fa fa-check-circle" aria-hidden="true"></i>Отделка пола - Линолеум</p>
@@ -277,7 +265,7 @@
                     <p><i class="fa fa-check-circle" aria-hidden="true"></i>Отделка стен - Водоэмульсионная краска</p>
                     <div class="line line_green"></div>
                 </div>
-                <div class="picking_complete">
+                <div class="equipment_type">
                     <p><i class="fa fa-check-circle" aria-hidden="true"></i>Дверь входная - Стальная</p>
                     <div class="line line_green"></div>
                     <p><i class="fa fa-check-circle" aria-hidden="true"></i>Двери межкомнатные - Деревянные</p>
@@ -294,11 +282,11 @@
     </section>
     <section id="documentation">
         <div class="container">
-            <div class="documentation_heading">
+            <div class="documentation_title">
                 <h2>У нас есть все необходимые документы</h2>
                 <p>Обеспечивающие надежность и Вашу защиту</p>
             </div>
-            <div class="documentation_license">
+            <div class="documentation_documents">
                 <img src="img/license_1.png" alt="">
                 <img src="img/license_2.png" alt="">
                 <img src="img/license_3.png" alt="">
@@ -308,12 +296,11 @@
     </section>
     <footer id="footer">
         <div class="container">
-            <div class="footer_wraper">
-                <div class="header_logo footer_logo">
-                    <!--<img src="img/logo.png" alt="логотип">-->
-                    <div class="header_logo_home header_margin">
-                        <p class="header_logo_home_housing">Жилой дом</p>
-                        <p class="header_logo_home_area">Ярославская область</p>
+            <div class="footer_wrapper">
+                <div class="company_logo">
+                    <div class="company_logo_description">
+                        <p class="company_logo_description_title">Жилой дом</p>
+                        <p class="company_logo_description_region">Ярославская область</p>
                     </div>
                 </div>
                 <div class="footer_rights">
@@ -322,14 +309,13 @@
                 </div> 
                 <div class="footer_address">
                     <p><i class="fa fa-map-marker" aria-hidden="true"></i><span>Адрес офиса:</span></p>
-                    <p>Ярославская область <br>
+                    <p class="footer_address_region">Ярославская область
                         р-н Заволжский</p>
                     <p><span>E-mail:</span> info@sitename.ru</p>
                 </div>  
-                <div class="header_contact footer_contact header_margin">
-                    <p class="header_contact_number">+7 (999) 999-99-99</p>
-                    <a href="#" class="button_call"><img src="img/button_call_footer.png" alt="заказать звонок"></a>
-                    <!--<a href="#" class="button_call"><i class="fa fa-phone" aria-hidden="true"></i>Заказать звонок</a>-->
+                <div class="company_contact footer_contact">
+                    <p class="company_contact_number">+7 (999) 999-99-99</p>
+                    <a href="#" class="company_button_call footer_button_call"><i class="fa fa-phone" aria-hidden="true"></i>Заказать звонок</a>
                 </div>
             </div>    
         </div>
@@ -367,7 +353,6 @@
 
 <!-- ----------------------Модальное окно "Оставить заявку"------------------------ -->
 
-
     <div class="modal_dialog_sign_up_for_viewing">
         <div class="modal_dialog_sign_up_for_viewing_inner">
             <div class="modal_dialog_sign_up_for_viewing_header">
@@ -382,8 +367,6 @@
             </div>
         </div>
     </div>
-
-
 
 <!-- ---------------------------------------------------------------------------- -->
 
